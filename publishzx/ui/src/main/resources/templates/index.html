@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+</head>
+<body>
+<p>Json 数据</p>
+<p th:text="${msg}">abcd</p>
+<div id="result">
+
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<form>
+
+    <p>文件：<input type="file" name="file"/></p>
+
+    <p><input type="button" onclick="uploadfile()" value="上传" /></p>
+
+</form>
+
+<p>test</p>
+
+<form enctype="multipart/form-data" method="post" action="/uploadImg">
+    图片<input type="file" name="file"/>
+    <input type="submit" value="上传"/>
+</form>
+</body>
+<script th:src="@{/js/jquery.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        onloadcases();
+
+    });
+function onloadcases() {
+    console.log("onloadcases");
+        $.ajax({
+            type: "POST",
+            url: "/data",
+            dataType: "json",
+            success: function(data)
+            {
+                console.log(data);
+                var music = "<ul><li>data前</li>";
+                $.each(data, function (i, n) {
+
+                    music += "<li>" + n.name + "</li>";
+                });
+                music += "</ul>";
+                $('#result').append(music);
+
+            }
+        });
+        return false;
+
+    }
+
+</script>
+</html>

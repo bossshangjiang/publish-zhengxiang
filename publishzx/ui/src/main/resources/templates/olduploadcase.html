@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="未登录首页"/>
+    <meta name="author" content="cc"/>
+    <title>中国医学影像共享服务平台</title>
+
+    <!-- CSS -->
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
+
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{css/navbar-fixed-top.css}" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+
+    <!-- Favicon and touch icons -->
+
+
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">中国医学影像共享服务平台</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="征象"/>
+                </div>
+                <button type="button" class="btn btn-default">搜索</button>
+
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">我的收藏</a></li>
+                        <li><a href="#">我的上传</a></li>
+                        <li><a href="#">我的审核</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人账户<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">找回密码</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </li>
+                <button class="btn btn-danger navbar-btn" type="button">  上传 </button>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- Main component for a primary marketing message or call to action -->
+
+    <div class="row clearfix">
+        <div class="col-md-6 column">
+            <ul class="breadcrumb">
+                <li>
+                    <a  th:href="@{/second(id=${id})}">
+                        头颈五官</a>
+                </li>
+                <li>
+                    <a  th:href="@{/third(id=${id},secondlevel=${secondlevel},)}">
+                        眼及眼眶病变
+                    </a>
+                </li>
+                <li th:text="${disease}" class="active">
+                    xxxx病变
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+        <div class="row clearfix">
+            <div class="col-md-5 column">
+            </div>
+            <div class="col-md-4 column">
+                <h2>上传影像</h2>
+            </div>
+        </div>
+
+        <!-- /container -->
+        <div class="row clearfix">
+            <div class="col-md-2 column">
+                <div class="panel-group" id="panel-20144">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title" data-toggle="collapse" data-parent="#panel-20144" href="#panel-element-162746">临床信息</a>
+                        </div>
+                        <div id="panel-element-162746" class="panel-collapse in">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="">实验室检查</a></li>
+                                    <li><a href="">专科检查</a></li>
+                                    <li><a href="">既往史/生育史/家族史</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-20144" href="#panel-element-886149">基本信息</a>
+                        </div>
+                        <div id="panel-element-886149" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="">年龄</a></li>
+                                    <li><a href="">性别</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-20144" href="#panel-element-886150">诊断依据</a>
+                        </div>
+                        <div id="panel-element-886150" class="panel-collapse collapse">
+
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-20144" href="#panel-element-886151">鉴别诊断</a>
+                        </div>
+                        <div id="panel-element-886151" class="panel-collapse collapse">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 column">
+                <ul class="breadcrumb">
+                    请选择一级目录：
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            头颈五官 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    请选择二级目录：
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            眼与眼眶 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    请选择三级目录：
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            具体病变 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <form role="form">
+                    <div class="checkbox">
+                        <label><input type="radio" />  男</label>
+                        <label><input type="radio" />  女</label>
+                        <label for="exampleInputFile"> 年龄</label><input type="text" id="exampleInputFile" />
+
+                    </div>
+                    <div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">选择影像文件</label><input type="file" id="exampleInputFile" />
+                        <p class="help-block">
+                            如需上传多幅图片，请选择多张上传<a href=""><span class="label label-success">多张上传</span></a>
+                        </p>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">实验室检查</label><input type="text" class="form-control" id="exampleInputEmail1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">专科检查</label><input type="text" class="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">诊断依据</label><input type="text" class="form-control" id="exampleInputEmail1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">鉴别诊断</label><input type="text" class="form-control" id="exampleInputEmail1" />
+                    </div>
+                    <button type="submit" class="btn btn-danger">提交审核</button>
+                    <button type="submit" class="btn btn-success">保存</button>
+
+                </form>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    <!-- /container -->
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script th:src="@{/js/jquery.js}" type="text/javascript"></script>
+<script th:src="@{/js/bootstrap.min.js}" type="text/javascript"></script>
+</body>
+</html>

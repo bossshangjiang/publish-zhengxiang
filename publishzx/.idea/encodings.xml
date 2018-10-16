@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/caseservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/caseservice2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dbservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sidecar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/symptomservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/symptomservice2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice2" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .divcss5{text-align:center}
+    </style>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="未登录首页"/>
+    <meta name="author" content="cc"/>
+    <title>中国医学影像资源共享平台</title>
+
+    <!-- CSS -->
+    <!-- Bootstrap core CSS -->
+
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
+
+    <link th:href="@{css/cover.css}" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!-- Favicon and touch icons -->
+
+
+</head>
+
+<body background="img/index.jpg">
+
+<!-- Top content -->
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="container">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">中国医学影像资源共享平台</h3>
+                    <nav>
+                        <ul class="nav masthead-nav nva-right">
+                            <li ><a href="/login">首页</a></li>
+                            <li ><a href="/gongneng">系统功能</a></li>
+                            <li class="active"><a href="/lianxi">联系我们</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <h2 >地址</h2>
+                        <h4 >西安市咸宁西路28#西安交通大学</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 >电话</h2>
+                        <h4 >029-400-5000</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 >邮件</h2>
+                        <h4 >xjtu_publish@mail.com.cn</h4>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="mastfoot">
+                <div class="divcss5">
+                    <p> 中国医学影像资源共享平台<a href="http://xjtu.edu.cn"></a>, by <a href="https://xjtu.edu.cn">@西安交通大学 2017</a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script th:src="@{/js/jquery.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/login.js}"></script>
+</body>
+</html>

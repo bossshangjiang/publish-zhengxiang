@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="caseservice" />
+        <module name="caseservice2" />
+        <module name="center" />
+        <module name="dbservice" />
+        <module name="elasticsearch" />
+        <module name="publish" />
+        <module name="sidecar" />
+        <module name="symptomservice" />
+        <module name="symptomservice2" />
+        <module name="ui" />
+        <module name="userservice" />
+        <module name="userservice2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="caseservice" target="1.8" />
+      <module name="caseservice2" target="1.8" />
+      <module name="center" target="1.8" />
+      <module name="dbservice" target="1.8" />
+      <module name="elasticsearch" target="1.8" />
+      <module name="publish" target="1.5" />
+      <module name="sidecar" target="1.8" />
+      <module name="symptomservice" target="1.8" />
+      <module name="symptomservice2" target="1.8" />
+      <module name="ui" target="1.8" />
+      <module name="userservice" target="1.8" />
+      <module name="userservice2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

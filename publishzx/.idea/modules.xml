@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/caseservice/caseservice.iml" filepath="$PROJECT_DIR$/caseservice/caseservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caseservice2/caseservice2.iml" filepath="$PROJECT_DIR$/caseservice2/caseservice2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/center/center.iml" filepath="$PROJECT_DIR$/center/center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbservice/dbservice.iml" filepath="$PROJECT_DIR$/dbservice/dbservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch/elasticsearch.iml" filepath="$PROJECT_DIR$/elasticsearch/elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/publish.iml" filepath="$PROJECT_DIR$/publish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sidecar/sidecar.iml" filepath="$PROJECT_DIR$/sidecar/sidecar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/symptomservice/symptomservice.iml" filepath="$PROJECT_DIR$/symptomservice/symptomservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/symptomservice2/symptomservice2.iml" filepath="$PROJECT_DIR$/symptomservice2/symptomservice2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/ui.iml" filepath="$PROJECT_DIR$/ui/ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice/userservice.iml" filepath="$PROJECT_DIR$/userservice/userservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice2/userservice2.iml" filepath="$PROJECT_DIR$/userservice2/userservice2.iml" />
+    </modules>
+  </component>
+</project>
